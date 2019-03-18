@@ -1,0 +1,11 @@
+// no option to pause
+// my time will be an hour
+// be sure to select JavaScript as your language
+// if you accidently close the browser window reopen the session using the URL emailed to you (from Dani)
+// to ensure it will solve all test cases (empty input, really small/large inputs / inputs of wrong type)
+// can you helper functions
+// if you finish the solution but want to see if you can find a better solution you can comment out your code and try other code
+// dont mess with the function signature it might mess up codility's assessment engine to run and test you r code
+// does there need to be pointers
+// does it need to be sorted first (would that make it faster)
+// your solution should include the desired function signature as givne in the problem description
