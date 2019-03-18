@@ -1,5 +1,5 @@
 // import sorting from '../utils/sortNumbers';
-// // given a LL give its lenght
+// // given a LL give its length
 // // non cyclical and at least one element
 
 // function solution(A) {
