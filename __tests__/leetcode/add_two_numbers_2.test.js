@@ -1,6 +1,6 @@
 import addTwoNums from '../../src/leetcode/add_two_numbers';
 import LinkList from '../../src/utils/linkList';
-describe('Add two numbers', () => {
+xdescribe('Add two numbers', () => {
   // beforeEach(() => {
   //   var LL = new linkList();
   //   LL.append(1);
