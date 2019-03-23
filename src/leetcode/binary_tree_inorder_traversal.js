@@ -31,7 +31,7 @@ var inorderTraversal = function(root) {
 function inorderTrav(root, arr = []) {
   //   let tree = root.head; // this doesnt work because it expects you to hand it the Tree already at the hea
   // go left
-  // look at node
+  // look at nodes
   // go right
   if (root) {
     inorderTrav(root.left, arr);
