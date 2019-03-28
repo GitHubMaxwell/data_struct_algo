@@ -30,6 +30,7 @@ class LinkList {
     }
   }
 }
+
 let array1 = [
   1,
   0,
@@ -64,9 +65,9 @@ let array1 = [
   1
 ];
 // let array2 = [5,6,4];
-let newLL = new LinkList();
-newLL.append([1]);
-newLL.append(array1);
-console.log(JSON.stringify(newLL));
+// let newLL = new LinkList();
+// newLL.append([1]);
+// newLL.append(array1);
+// console.log(JSON.stringify(newLL));
 
 export default LinkList;

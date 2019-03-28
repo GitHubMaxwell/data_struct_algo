@@ -32,34 +32,37 @@ function solution(A) {
   L[0] = -1;
   var i;
 
+  // ush all values into new array with -1 being the first
   for (i = 0; i < n; i++) {
     // ORIGINAL 2
     L[i + 1] = A[i];
     // L[i] = A[i];
   }
-  console.log(L);
+  // console.log(L);
 
   var count = 0;
 
-  // ORIGINAL 3
-  // var pos = Math.floor((n + 1) / 2); //?
-  var pos = Math.floor(n / 2); //?
+  // ORIGINAL 3 - change
+  // whatever was in the center of the array is the possible candidate
+  var pos = Math.floor((n + 1) / 2); //?
+  // var pos = Math.floor(n / 2); //?
   candidate = L[pos]; //?
 
-  // ORIGINAL 4
+  // ORIGINAL 4 - change
   // for (i = 1; i <= n; i++) {
   for (i = 0; i < L.length; i++) {
-    if (L[i] == candidate) count = count + 1;
-    count;
+    if (L[i] == candidate) count = count + 1; //?
+    // count;
   }
-  count;
-  pos;
+  // count;
+  // pos;
 
-  // ORIGINAL
+  // ORIGINAL 5
   // if (count > pos) return candidate;
   // return -1;
-  A.length; //?
+  // A.length; //?
 
+  // CHANGE
   return A.length === 1 ? A[0] : count > pos ? candidate : -1; //?
 }
 
@@ -96,4 +99,9 @@ let array = [1];
 // PASS
 // let array = [1, 1];
 // 1
+
+// what is the int that occupies more than have the length of the array
+// if none = -1
+// if return the number
+
 solution(array); //?
