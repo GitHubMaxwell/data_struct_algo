@@ -4,7 +4,7 @@
 // STEPS
 // sort array
 // return kth from end
-import sortNum from '../utils/sortNumbers';
+import sortNum from '../../utils/sortNumbers';
 
 function kthLargest(arr, target) {
   arr.sort(sortNum);

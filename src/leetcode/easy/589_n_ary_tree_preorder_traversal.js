@@ -1,4 +1,6 @@
-import naryTree from '../utils/naryTree';
+// leetcode # 589 easy
+
+import naryTree from '../../utils/naryTree';
 
 function preOrder(tree) {
   return tree;

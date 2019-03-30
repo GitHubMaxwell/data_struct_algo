@@ -1,4 +1,6 @@
-import BST from '../utils/binarySearchTree';
+// leetcode #94 medium
+
+import BST from '../../utils/binarySearchTree';
 // have the recursion be
 // vistLeft(node);
 // push(current.value) // at this point youve investigated the entire left subtree and this is the root

@@ -12,21 +12,24 @@ class LinkList {
   }
   append(val) {
     if (!this.head) {
-      this.head = new Node(val[0]);
+      // this.head = new Node(val[0]);
+      // above converting to N-ary tree
+      this.head = new Node(val);
       this.length = this.length + 1;
     } else {
       let current = this.head;
       while (current.next) {
         current = current.next;
       }
-      for (let i = 1; i < val.length; i++) {
-        val[i]; //?
-        current.next = new Node(val[i]);
-        this.length = this.length + 1;
-        current = current.next;
-      }
-      // current.next = new Node(val);
-      // this.length = this.length + 1;
+      // for (let i = 1; i < val.length; i++) {
+      //   val[i]; //?
+      //   current.next = new Node(val[i]);
+      //   this.length = this.length + 1;
+      //   current = current.next;
+      // }
+      // above is for N-ary tree
+      current.next = new Node(val);
+      this.length = this.length + 1;
     }
   }
 }

@@ -1,4 +1,4 @@
-// leet code #1
+// leet code #1 easy
 
 // QUESTION
 // given an array of integers and given the target sum
