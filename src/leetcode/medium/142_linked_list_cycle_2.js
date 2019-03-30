@@ -1,4 +1,6 @@
-import LinkList from '../utils/linkList';
+// leetcode #142 medium
+
+import LinkList from '../../utils/linkList';
 
 //given a link list, return the node where the cycle begins
 // if there is no cycle then return null

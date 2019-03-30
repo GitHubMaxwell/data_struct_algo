@@ -1,4 +1,6 @@
-import LinkList from '../utils/linkList';
+// leetcode # 2 medium
+
+import LinkList from '../../utils/linkList';
 
 // given two link lists representing non negative integers
 // 5 -> 6 -> 4 -> null = 465;

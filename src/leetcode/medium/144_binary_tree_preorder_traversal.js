@@ -1,5 +1,5 @@
-// leetcode #144
-import binaryTree from '../utils/binarySearchTree';
+// leetcode #144 medium
+import binaryTree from '../../utils/binarySearchTree';
 // var preorderTraversal = function(root) {
 //   let array = [];
 //   function traverse(node) {
