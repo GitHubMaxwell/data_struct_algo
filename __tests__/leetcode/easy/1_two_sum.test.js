@@ -1,4 +1,4 @@
-import twoSum from '../../src/leetcode/two_sum_1';
+import twoSum from '../../../src/leetcode/easy/1_two_sum';
 
 xdescribe('Two Sum leetcode question 1', () => {
   it('should return [1,2]', () => {

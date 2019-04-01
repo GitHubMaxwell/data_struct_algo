@@ -6,13 +6,8 @@ class CircNode {
 }
 class CircularLinkedList {
   constructor() {
-    // constructor(cycle = null) {
-    // you determine the cycle at initialization or its set to 'null' (its per node value)
-    // maybe handle it in another method
-    // this.cycle = cycle;
     this.hasCycle = false;
     this.length = 0;
-    this.cycleNode = null;
     this.head = null;
   }
 
@@ -22,21 +17,19 @@ class CircularLinkedList {
       this.length = this.length + 1;
       if (!this.head.end) {
         this.head.end = true;
-        // PROBLEM ????
-        // may be better to have it in the form of a property thats only found on the end
       }
     } else {
       let current = this.head;
       while (!current.end) {
-        // since its cyclic we need another way of identifying what is the end of the LL
-        // while the current node doesnt have an "end" key -> iterate
+        // since its cyclic we need another way of identifying what is the end of the LL to iterate to
+        // while the current node doesnt have an "end" key = iterate
         current = current.next;
       }
-      // current.next is the cyclic node so we want to add a node in between it and the
-      // swap the cyclic links
+
+      // swap the cyclic link
       // store cyclic entry point from current in "temp" in order to assign it to the new end node
       let temp = current.next;
-      // delete end property from current node
+      // delete 'end' property from current node
       delete current.end;
       // create new last node
       current.next = new CircNode(val);
@@ -44,9 +37,8 @@ class CircularLinkedList {
       current.next.end = true;
       // if there's a cyclic entry point on the current node assign it to current.next.next
       if (temp) {
-        //   if (this.cycle) {
         // point new node's 'next' to cyclic entry point node
-        current.next.next = temp; // pointing at another node not null; //?
+        current.next.next = temp;
       }
       // add length to LL
       this.length = this.length + 1;

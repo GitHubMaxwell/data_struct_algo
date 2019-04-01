@@ -1,5 +1,5 @@
-import binaryTree from '../../src/utils/binarySearchTree';
-import inorderTraversal from '../../src/leetcode/binary_tree_inorder_traversal';
+import binaryTree from '../../../src/utils/binarySearchTree';
+import inorderTraversal from '../../../src/leetcode/medium/94_binary_tree_inorder_traversal';
 describe('Binary Tree IN-order Traversal', () => {
   it('should make a tree', () => {
     let tree = new binaryTree();
