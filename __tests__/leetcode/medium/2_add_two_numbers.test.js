@@ -1,5 +1,7 @@
-import addTwoNums from '../../src/leetcode/add_two_numbers';
-import LinkList from '../../src/utils/linkList';
+import addTwoNums from '../../../src/leetcode/medium/2_add_two_numbers';
+import LinkList from '../../../src/utils/linkList';
+import fLL from '../../../src/utils/linkListFast';
+
 xdescribe('Add two numbers', () => {
   // beforeEach(() => {
   //   var LL = new linkList();

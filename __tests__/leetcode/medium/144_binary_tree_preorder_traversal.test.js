@@ -1,5 +1,6 @@
-import binaryTree from '../../src/utils/binarySearchTree';
-import preorderTraversal from '../../src/leetcode/binary_tree_preorder_traversal';
+import binaryTree from '../../../src/utils/binarySearchTree';
+import preorderTraversal from '../../../src/leetcode/medium/144_binary_tree_preorder_traversal';
+
 describe('Binary Tree PRE-order Traversal', () => {
   it('returns [1,3,2]', () => {
     let tree = new binaryTree();

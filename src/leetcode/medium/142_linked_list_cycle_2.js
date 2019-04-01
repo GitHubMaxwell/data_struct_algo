@@ -20,7 +20,7 @@ import LinkList from '../../utils/linkList';
 // if the value of the two iterators is the same then they are on the start of the cycle
 
 var detectCycle = function(head) {
-  //
+  return 'need to do';
 };
 
 let arr = [0, 1, 2, 3];
@@ -29,3 +29,5 @@ let newLL = new LinkList();
 newLL.append(arr); //?
 
 console.log(JSON.stringify(newLL));
+
+export default detectCycle;

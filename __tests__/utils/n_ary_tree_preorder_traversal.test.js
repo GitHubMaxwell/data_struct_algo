@@ -1,4 +1,4 @@
-import naryTree from '../../src/utils/naryTree';
+import naryTree from '../../src/utils/n_aryTree';
 
 describe('N-ary Tree PRE order Traversal', () => {
   it('returns TEST', () => {

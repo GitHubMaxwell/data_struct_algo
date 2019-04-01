@@ -1,4 +1,4 @@
-import CircularQueue from '../../src/leetcode/stacks_queues/circular_queue_array';
+import CircularQueue from '../../../src/leetcode/explore/stacks_queues/circular_queue_array';
 
 describe('Circular Queue using an Array', () => {
   it('derp', () => {

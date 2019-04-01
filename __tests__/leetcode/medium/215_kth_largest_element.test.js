@@ -1,4 +1,4 @@
-import kthLargest from '../../src/leetcode/kth_largest_element';
+import kthLargest from '../../../src/leetcode/medium/215_kth_largest_element';
 describe('KTH Largest element in an array', () => {
   it('return 5', () => {
     let array = [6, 5, 4, 3, 2, 1];
