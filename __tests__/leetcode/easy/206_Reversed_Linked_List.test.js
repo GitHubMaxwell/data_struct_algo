@@ -11,6 +11,6 @@ describe('Reverse a given linked list', () => {
     result.append([3, 2, 1]);
     console.log(JSON.stringify(result)); //?
 
-    expect(reversed(LL)).toEqual(result);
+    expect(reversed(LL.head)).toEqual(result.head);
   });
 });
