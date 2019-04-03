@@ -1,3 +1,7 @@
+// https://leetcode.com/problems/min-stack/discuss/222236/JavaScript-O(1)-Time
+// the above solution is with arrays and has O(1) everything
+
+// my solution is with implementing a link list
 // Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 var Node = function(val) {
   this.val = val;
@@ -15,7 +19,6 @@ MinStack.prototype.push = function(x) {
     let old = this.head;
     this.head = new Node(x);
     this.head.next = old;
-    if (x < this.min) this.min = x;
   }
 };
 
@@ -32,6 +35,7 @@ MinStack.prototype.top = function() {
 };
 
 MinStack.prototype.getMin = function() {
+  // each node basically holds the min value so you might as well hold it in the head node
   let min = this.head.val;
   let current = this.head;
   while (current.next) {
