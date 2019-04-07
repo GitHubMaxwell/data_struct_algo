@@ -24,11 +24,16 @@ function gemma(S) {
   // 022-198-532-4
   let newArr = newStr.split('');
 
+  // check if the second to last element is a dash
+  // if it is swap it
   if (newArr[newArr.length - 2] === '-') {
+    // swap dash and number to make it two numbers at the rear
     let temp = newArr[newArr.length - 3];
     newArr[newArr.length - 3] = newArr[newArr.length - 2];
     newArr[newArr.length - 2] = temp;
   }
+
+  // join the array and turn it into a string
   let string = newArr.join('');
   string.toString();
 

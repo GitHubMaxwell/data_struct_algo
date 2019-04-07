@@ -32,7 +32,7 @@ function solution(A) {
   L[0] = -1;
   var i;
 
-  // ush all values into new array with -1 being the first
+  // push all values into new array with -1 being the first
   for (i = 0; i < n; i++) {
     // ORIGINAL 2
     L[i + 1] = A[i];
@@ -42,13 +42,13 @@ function solution(A) {
 
   var count = 0;
 
-  // ORIGINAL 3 - change
+  // ORIGINAL 3 - CHANGED -
   // whatever was in the center of the array is the possible candidate
   var pos = Math.floor((n + 1) / 2); //?
   // var pos = Math.floor(n / 2); //?
   candidate = L[pos]; //?
 
-  // ORIGINAL 4 - change
+  // ORIGINAL 4 - CHANGE - to the length of the new array
   // for (i = 1; i <= n; i++) {
   for (i = 0; i < L.length; i++) {
     if (L[i] == candidate) count = count + 1; //?
