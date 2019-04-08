@@ -1,6 +1,6 @@
 import isPalindrome from '../../../src/leetcode/easy/243_Palindrome_Linked_List';
 import fLL from '../../../src/utils/linkListFast';
-describe('#243 Palindrome Linked List', () => {
+xdescribe('#243 Palindrome Linked List', () => {
   it('test', () => {
     let nodes = [1, 2, 1];
     let LL = new fLL();

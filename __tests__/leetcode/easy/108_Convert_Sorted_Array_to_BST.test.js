@@ -1,7 +1,7 @@
 import sortedArrayToBst from '../../../src/leetcode/easy/108_Convert_Sorted_Array_to_BST';
 import BST from '../../../src/utils/binarySearchTree';
 
-describe('Convert a sorted array to a balanced BST', () => {
+xdescribe('Convert a sorted array to a balanced BST', () => {
   it('test', () => {
     let arr = [-10, -3, 0, 5, 9];
     let newBST = new BST();
