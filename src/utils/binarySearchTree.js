@@ -37,6 +37,7 @@ class Tree {
             // recursively continue searching down the left
           }
         }
+
         if (value > node.value) {
           // go to the RIGHT
           if (node.right === null) {

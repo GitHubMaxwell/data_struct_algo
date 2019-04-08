@@ -146,29 +146,29 @@ import BST from '../../utils/binarySearchTree';
 //-----------------//
 // how do you not get duplicates with this
 
-// var maxDepth = function(root) {
-//   return findDepth(root); //?
-// };
+var maxDepth = function(root) {
+  return findDepth(root); //?
+};
 
-// function findDepth(root, depth = 0) {
-//   if (!root) {
-//     return depth; //?
-//     // this is the trick to the END CASE
-//     // it
-//   }
+function findDepth(root, depth = 0) {
+  if (!root) {
+    return depth; //?
+    // this is the trick to the END CASE
+    // it
+  }
 
-//   let leftDepth = findDepth(root.left, depth + 1);
-//   // find depth of left sub tree
-//   // when you back track up to a parent node you lose the depth + 1 state (it goes back to the previous one)??? - but the end case
+  let leftDepth = findDepth(root.left, depth + 1);
+  // find depth of left sub tree
+  // when you back track up to a parent node you lose the depth + 1 state (it goes back to the previous one)??? - but the end case
 
-//   let rightDepth = findDepth(root.right, depth + 1);
-//   // find depth of right subtree
+  let rightDepth = findDepth(root.right, depth + 1);
+  // find depth of right subtree
 
-//   let max = leftDepth > rightDepth ? leftDepth : rightDepth;
-//   // this is continously evaluated
+  let max = leftDepth > rightDepth ? leftDepth : rightDepth;
+  // this is continously evaluated
 
-//   return max; //?
-// }
+  return max; //?
+}
 
 // let tree = new BST();
 
@@ -184,21 +184,21 @@ import BST from '../../utils/binarySearchTree';
 
 // console.log(JSON.stringify(tree));
 
-function maxDepth(tree) {
-  let max = 0;
+// function maxDepth(tree) {
+//   let max = 0;
 
-  function traverse(tree, depth = 1) {
-    if (!tree) {
-      return;
-    }
+//   function traverse(tree, depth = 1) {
+//     if (!tree) {
+//       return;
+//     }
 
-    max = Math.max(max, depth);
+//     max = Math.max(max, depth);
 
-    traverse(tree.left, depth + 1);
-    traverse(tree.right, depth + 1);
-  }
-  traverse(tree);
-  return max; //?
-}
+//     traverse(tree.left, depth + 1);
+//     traverse(tree.right, depth + 1);
+//   }
+//   traverse(tree);
+//   return max; //?
+// }
 
 export default maxDepth;
